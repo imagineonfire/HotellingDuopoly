@@ -64,6 +64,7 @@ public class AlgorithmConvergenceTests {
         }
     }
 
+    // 13. Сходимость Best Response
     @Test
     public void testBestResponseConvergence() throws Exception {
         // две фирмы на концах отрезка
@@ -85,6 +86,7 @@ public class AlgorithmConvergenceTests {
         Assert.assertTrue(checkNash(firms, residents, "Euclidean"), "BestResponse did not reach Nash");
     }
 
+    // 14. Сходимость ExhaustiveSearch
     @Test
     public void testExhaustiveSearchConvergence() throws Exception {
         List<Firm> firms = Arrays.asList(
@@ -103,6 +105,7 @@ public class AlgorithmConvergenceTests {
         Assert.assertTrue(checkNash(firms, residents, "Euclidean"), "ExhaustiveSearch did not reach Nash");
     }
 
+    // 15. Сходимость TernarySearch
     @Test
     public void testTernarySearchConvergence() throws Exception {
         List<Firm> firms = Arrays.asList(

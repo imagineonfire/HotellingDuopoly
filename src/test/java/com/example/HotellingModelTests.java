@@ -116,6 +116,7 @@ public class HotellingModelTests {
         Assert.assertTrue(pLowT > pHighT, "Firm with lower t should get more customers");
     }
 
+    // 6. Четыре фирмы на равномерной сетке (евклидова метрика)
     @Test
     public void testFourFirmsInSquare_Euclidean() {
         List<Firm> firms = Arrays.asList(
@@ -141,6 +142,7 @@ public class HotellingModelTests {
         }
     }
 
+    // 7. Две фирмы в круге (Манхэттенова метрика)
     @Test
     public void testTwoFirmsInCircle_Manhattan() {
         Firm f1 = new Firm(0.3, 0.5, 0);
@@ -157,6 +159,7 @@ public class HotellingModelTests {
         Assert.assertTrue(Math.abs(p1 - p2) < 50, "Profits should be similar");
     }
 
+    // 8. Три фирмы и кластерная плотность спроса
     @Test
     public void testClusterDemandBias() {
         Firm f1 = new Firm(0.2, 0.2, 0); // рядом с кластером
