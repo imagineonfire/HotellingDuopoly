@@ -22,11 +22,11 @@ import java.util.Random;
 public class HotellingDuopoly extends Application {
 
     private static final int CANVAS_SIZE = 400;
-    private List<Firm> firms = new ArrayList<>();
-    private List<double[]> residents = new ArrayList<>();
+    List<Firm> firms = new ArrayList<>();
+    List<double[]> residents = new ArrayList<>();
     private Label equilibriumLabel;
     private String shape = "Circle";
-    private String metric = "Euclidean";
+    String metric = "Euclidean";
     private String residentDistribution = "Uniform";
     private String firmDistribution = "Manual";
     private String priceDistribution = "Manual";
