@@ -25,6 +25,7 @@ public class HotellingModelTests {
         double p1 = calculateProfit(left, firms, residents, "Euclidean");
         double p2 = calculateProfit(right, firms, residents, "Euclidean");
 
+        System.out.println(p1 + "  " + p2);
         // Ожидаем примерно по 500 жителей на фирму
         Assert.assertTrue(Math.abs(p1 - 500.0) < 50, "Left profit");
         Assert.assertTrue(Math.abs(p2 - 500.0) < 50, "Right profit");
@@ -44,6 +45,7 @@ public class HotellingModelTests {
         double pLeft = calculateProfit(left, firms, residents, "Euclidean");
         double pRight = calculateProfit(right, firms, residents, "Euclidean");
 
+        System.out.println(pLeft + "  " + pRight);
         Assert.assertTrue(pLeft > pRight, "Left should earn more");
         Assert.assertTrue(pLeft > 350 && pLeft < 450, "Left profit range");
         Assert.assertTrue(pRight > 200 && pRight < 300, "Right profit range");
